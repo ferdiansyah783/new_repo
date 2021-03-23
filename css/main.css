@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ddd;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* navbar */
+.navbar {
+    padding: 1em 2em;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.logo span:nth-child(3) {
+    color: blue;
+}
+
+.logo p {
+    position: absolute;
+    left: 73px;
+    top: 38px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    font-weight: 550;
+    letter-spacing: 1.3px;
+}
+
+/* hamburger Menu */
+.carousel {
+    z-index: 999;
+    cursor: pointer;
+}
+
+.carousel ul {
+    list-style-type: none;
+}
+
+.carousel ul li {
+    width: 35px;
+    height: 5px;
+    transition: ease-in-out 0.5s;
+}
+
+.carousel ul li:nth-child(odd) {
+    background-color: rgba(70, 70, 70, 0.6);
+}
+
+.carousel ul li:nth-child(3) {
+    width: 30px;
+}
+
+.carousel ul li:first-child {
+    transform-origin: 0 0;
+}
+
+.carousel ul li:last-child {
+    transform-origin: 0 100%;
+}
+
+ul.toggle li:nth-child(3) {
+    transform: translate(70px,0px);
+    background-color: transparent;
+}
+
+ul.toggle li:first-child {
+    transform: rotate(45deg);
+}
+
+ul.toggle li:last-child {
+    transform: rotate(-45deg) translate(-1px,3px);
+}
+/* akhir hamburger */
+
+/* isi carousel */
+.isi-carousel {
+    min-height: 75%;
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    color: rgb(20, 20, 20);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: ease-in-out .5s;
+    z-index: 1;
+}
+
+.isi-carousel a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.isi-carousel.slide {
+    transform: translateX(0);
+}
+/* akhir isi */
+
+/* HOME */
+.home {
+    padding: 9em 3em;
+    min-height: 500px;
+}
+
+.bagan-1 h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.bagan-1 p {
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.home .bagan-2 {
+    margin-top: 45px;
+}
+
+.bagan-2 a{
+    border: 2px solid rgb(99, 3, 255);
+    border-radius: 5px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.bagan-2 a:nth-child(1) {
+    color: rgb(99, 3, 255);
+}
+
+.bagan-2 a:nth-child(2) {
+    background-color: rgb(99, 3, 255);
+    color: #eee;
+}
+
+.bagan-3 img {
+    position: absolute;
+    bottom: 1px;
+    top: 4em;
+    right: -32.5em;
+    /* box-shadow: 100px 10px red; */
+}
+
+/* footer */
+.foot {
+    min-height: 88px;
+    background-color: rgb(245, 245, 245);
+    box-sizing: border-box;
+}
